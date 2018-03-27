@@ -1,0 +1,17 @@
+{
+"name": "나만의 익스텐션",
+"version": "2.1",
+"manifest_version": 2,
+"description": "내꺼내꺼",
+"icons": { "128": "owl.png" },
+"background": {
+  "persistent": false,
+  "scripts": ["bg.js"]
+},
+"permissions": ["http://*/*","https://*/*"],
+"browser_action": {
+  "default_title": "",
+  "default_icon": "owl.png",
+  "default_popup": "popup.html"
+}
+}
