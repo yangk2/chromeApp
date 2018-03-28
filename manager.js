@@ -1,6 +1,9 @@
-console.log("ssssss");
 chrome.tabs.executeScript({
     code:'document.querySelector("body").innerText'
 },function(result){
-    alert(result[0]);
+    if(result[0]){
+        alert(result[0])
+    }else{
+        alert("no")
+    }
 })
